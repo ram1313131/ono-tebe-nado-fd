@@ -1,1 +1,271 @@
-/* место для вашего кода */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.nav_list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav_item:not(:first-child)::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 24px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.nav__link_active {
+  text-decoration: none;   
+}
+
+.header_logo {
+    display: block;
+    width: 148px;
+}
+
+.header_contacts {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+.header_address {
+    margin: auto 0;
+}
+.header_contact-link {
+  color: #000;
+  text-decoration: underline;
+}
+.cover {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-height: 757px;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+.cover-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 0px;
+    filter: brightness(0.4);
+}
+
+.cover_title {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    margin: 0;
+    position: relative;
+    inset: 0;
+    color: #fff;
+    font-size: 100px;
+    font-style: bold;
+    letter-spacing: 30%;
+    text-transform: uppercase;
+}
+
+.cover_word_left {
+    align-self: flex-start;
+    margin-left: 100px;
+}
+.cover_word_center {
+    align-self: center;
+}
+.cover_word_right {
+    align-self: flex-end;
+}
+
+.cover_footer {
+    position: relative;
+    left: 10px;
+    right: 30px;
+    top: 150px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.cover_subtitle {
+    font-size: 22px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 100;
+    word-spacing: 20px;
+}
+
+.cover_button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+}
+.loti-title {
+    font-size: 40px;
+    margin-left: 50px;
+    font-weight: 400;
+}
+.loti-card {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.card-img {
+    display: block;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.loti-card01 {
+    position: relative;
+}
+.loti-card02 {
+    position: relative;
+}
+.loti-card03 {
+    position: relative;
+}
+
+.loti-card-title {
+    display: flex;
+    position: relative;
+    inset: 0;
+    width: 254px;
+    color: #fff;
+    align-self: center;
+    justify-self: center;
+    font-size: 22px;
+}
+.loti-card-decs {
+    position: relative;
+    inset: 0;
+    width: 254px;
+    color: #fff;
+    align-self: center;
+    font-size: 20px;
+}
+.loti-content {
+    position: absolute;
+    inset: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lots_more {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 100px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+.about {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    column-gap: 100px;
+    padding: 120px 60px;
+}
+
+.about-logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 200px;
+    height: 200px;
+    padding: 45px;
+    object-fit: contain;
+    background-color: #000;
+    border-radius: 50%;
+}
+.about_title {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.about_text-block {
+    grid-column: 2;
+    grid-row: 2;
+    max-width: 1000px;
+    margin-top: 40px;
+}
+
+.about_text {
+    font-size: 25px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    font-style: normal;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.footer_socials {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer_icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+.footer_address {
+    margin: 0;
+}
+
+.footer_nav-link {
+    color: #000;
+}
+.footer_link {
+    color: #000;
+}
