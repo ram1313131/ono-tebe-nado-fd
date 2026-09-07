@@ -18,19 +18,20 @@
         </ul>
     </nav>
 
-    <a class="header_logo-link" href="#">
-        <img class="header_logo" src="./images/logo-black.svg" alt="Оно тебе надо">
+    <a class="logo-link">
+        <img class="logo" src="./images/logo-black.svg" alt="Оно тебе надо">
     </a>
 
-    <div class="header_contacts">
-        <a class="header_contact-link" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="header_contact-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p class="header_address">наб. Принсенграхт 263-265, Амстердам</p>
-    </div>
+    <address class="address header_address">
+        <a class="address_link" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="address_link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="address_text">наб. Принсенграхт 263-265, Амстердам</p>
+    </address>
 </header>
+
 <main>
     <section class="cover">
-        <img src="./images/cover.jpg" alt="" class="cover-image">
+        <div class="overlay"></div>
         <h1 class="cover_title">
             <span class="cover_word cover_word_left">оно</span>
             <span class="cover_word cover_word_center">тебе</span>
@@ -42,59 +43,59 @@
             <a class="cover_button" href="#">сделать ставку</a>
         </div>
     </section>
-    <section>
-        <div class="loti">
-            <h2 class="loti-title">Лоты</h2>
-            <div class="loti-card">
-                <div class="loti-card01">
-                    <img src="./images/card-lot-01.jpg" alt="" class="card-img">
-                    <div class="loti-content">
-                        <h2 class="loti-card-title">Фильм режиссёра, который бросил киношколу</h2>
-                        <p class="loti-card-decs">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас
-                            Андерсон?</p>
-                        </div>
-                </div>
-                <div class="loti-card02">
-                    <img src="./images/card-lot-02.jpg" alt="" class="card-img">
-                    <div class="loti-content">
-                        <h2 class="loti-card-title">Книга, где описан один скучный день из жизни рекламного агента</h2>
-                        <p class="loti-card-decs">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно
+
+    <section class="loti">
+        <h2 class="loti-title">Лоты</h2>
+        <ul class="loti-list">
+            <li class="loti-item">
+                <a class="card card_film" href="#">
+                    <div class="overlay"></div>
+                    <h3 class="card_title">Фильм режиссёра, который бросил киношколу</h3>
+                    <p class="card_text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас
+                        Андерсон?</p>
+                </a>
+            </li>
+            <li class="loti-item">
+                <a class="card card_book" href="#">
+                    <div class="overlay"></div>
+                    <h3 class="card_title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                    <p class="card_text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно
                         рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на
                         эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-                        </div>
-                </div>
-                <div class="loti-card03">
-                    <img src="./images/card-lot-03.jpg" alt="" class="card-img">
-                    <div class="loti-content">
-                        <h2 class="loti-card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
-                        <p class="loti-card-decs">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                </a>
+            </li>
+            <li class="loti-item">
+                <a class="card card_painting" href="#">
+                    <div class="overlay"></div>
+                    <h3 class="card_title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                    <p class="card_text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                         котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-                        </div>
-                       
-                </div>
-            </div>
-            <a class="lots_more" href="#">посмотреть больше</a>
-        </div>
+                </a>
+            </li>
+        </ul>
+        <a class="lots_more" href="#">посмотреть больше</a>
     </section>
-</main>
-<section class="about">
-    <img src="./images/logo-white.svg" alt="" class="about-logo">
+
+    <section class="about">
+        <img src="./images/logo.png" alt="" class="about-logo">
         <h2 class="about_title">Об аукционе</h2>
         <div class="about_text-block">
             <p class="about_text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были
                 попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже
                 ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
-                <p class="about_text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые
-                    и непонятые. Когда-то они казались просто неудачными. Но, несмотря
-                    на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в
-                    эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
+            <p class="about_text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые
+                и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+                на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в
+                эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
         </div>
-</section>
+    </section>
+</main>
+
 <footer class="footer">
-    <address class="footer_contacts">
-        <a class="footer_link" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="footer_link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p class="footer_address">наб. Принсенграхт 263-265, Амстердам</p>
+    <address class="address footer_address">
+        <a class="address_link" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="address_link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="address_text">наб. Принсенграхт 263-265, Амстердам</p>
     </address>
 
     <nav class="footer_nav">
@@ -106,11 +107,11 @@
     </nav>
 
     <ul class="footer_socials">
-        <li><a href="#"><img class="footer_icon" src="./images/yt.svg" alt="YouTube"></a></li>
-        <li><a href="#"><img class="footer_icon" src="./images/vk.svg" alt="ВКонтакте"></a></li>
-        <li><a href="#"><img class="footer_icon" src="./images/pinterest.svg" alt="Pinterest"></a></li>
+        <li><a href="#" target="_blank"><img class="footer_icon" src="./images/yt.svg" alt="YouTube"></a></li>
+        <li><a href="#" target="_blank"><img class="footer_icon" src="./images/vk.svg" alt="ВКонтакте"></a></li>
+        <li><a href="#" target="_blank"><img class="footer_icon" src="./images/pinterest.svg" alt="Pinterest"></a></li>
     </ul>
 </footer>
-    
+
 </body>
 </html>
