@@ -144,7 +144,7 @@ body {
   margin-top: 180px;
   margin-left: 39px;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -189,6 +189,7 @@ body {
   width: 254px;
   font-size: 22px;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .card_text {
